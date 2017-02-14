@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Saasapp</title>
+  <title>BaoBei</title>
   <%= csrf_meta_tags %>
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -26,6 +26,12 @@
 
 </div>
 <div class="collapse navbar-collapse" id="main-nav-collapse">
+  <div class="nav navbar-nav navbar-right">
+    <a href="/users/sign_in" class="btn btn-default navbar-btn">Log In</a>
+    <a href="/users/sign_up" class="btn btn-default navbar-btn">Sign Up</a>
+    
+    
+  </div>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path  %></li>
         <li><%= link_to "Contact us", new_contact_path  %></li>
