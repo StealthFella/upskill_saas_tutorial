@@ -26,6 +26,11 @@ class ProfilesController < ApplicationController
    end
   end
   
+  # GET to /users/:user_id/profile/edit
+  def edit
+    @user = User.find( params[:user_id])
+  end
+  
   # Whitelist the params below.
   private
   def profile_params
